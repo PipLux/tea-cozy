@@ -14,10 +14,13 @@ header {
   position: fixed;
   z-index: 1;
   align-items: center;
+  top: 0;
   width: 100%;
   height: 69px;
   background-color: black;
   border-bottom: 1px solid seashell;
+  right: 0;
+  left: 0;
 }
 
 .logo {
@@ -47,9 +50,13 @@ nav span {
 .content {
   display: flex;
   position: relative;
-  top: 69px;
+  top: 63px;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
+  align-content: center;
+  left: 0;
+  right: 0;
 }
 
 .background-image-mission {
@@ -57,7 +64,7 @@ nav span {
   flex-direction: column;
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
   height: 700px;
-  width: 1200 px;
+  width: 1200px;
 }
 
 .mission {
@@ -66,31 +73,47 @@ nav span {
   top: 300px;
 }
 
+/*Product Section*/
+
 .container {
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /*position: relative;
-  top: 100px;*/
-  /*align-content: flex-start;*/
   align-items: center;
+  margin-bottom: 40px;
+}
+
+.container h2 {
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+
+.container h4 {
+ margin-top: 10px;
 }
 
 .wrap-container {
   display: flex;
   width: 1000px;
-  /*flex-direction: row;*/
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
   align-items: center;
 }
 
 .photo-title img {
-  /*flex-wrap: wrap;*/
   height: 200px;
   width: 300px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 5px;
 }
+
+.photo-title h4 {
+  margin-top: 5px;
+}
+
+/*Location Section*/
 
 .locations {
   display: flex;
@@ -98,12 +121,17 @@ nav span {
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
   height: 500px;
   width: 1200px;
-  justify-content: center;
-  align-content: center;
+}
+
+.locations h2 {
+  margin-bottom: 10px;
 }
 
 .box-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
 }
 
 .box {
@@ -111,9 +139,29 @@ nav span {
   height: 300px;
   width: 300px;
   text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 1;
 }
 
-
-
+.box h4 {
+  font-weight: normal;
+}
 
 /*Footer Section*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+}
+
+.contact {
+  height: 200px
+}
+
+.copyright {
+  display: flex;
+  margin-left: 20px;
+}
